@@ -43,6 +43,7 @@
     transition-duration: .2s;
 }
 .card a:hover{
-    background-color: blueviolet;
-    transition-duration: .2s;
+    background-color: violet;
+    transition-duration: .2s; 
+    
 }
