@@ -3,6 +3,21 @@
     margin: 0;
     padding: 0;
 }
+img{
+    max-width: 500px;
+    
+}
+img:hover{
+    animation-name: rotatePic;
+    animation-duration: 2s;
+}
+@keyframes rotatePic{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(80deg);}
+    50%{transform: rotate(120deg);}
+    80%{transform: rotate(240deg);}
+    100%{transform: rotate(360deg);}
+}
 
 .container {
     background-color: rgb(255, 0, 128);
@@ -14,6 +29,13 @@
 
 .card {
     padding: 1rem;
+    background-image: linear-gradient(to right, rgb(255, 0, 0), rgb(255, 255, 0), rgb(247, 0, 255));
+    box-shadow: 0 0 10px 10px rgb(11, 254, 76);
+    transition: scale 0.2s;
+}
+
+.card:hover{
+    scale: 1.02;
 }
 
 .card p {
@@ -46,4 +68,13 @@
     background-color: blueviolet;
     transition-duration: .2s; 
     
+}
+
+.card:active{
+    opacity: .5;
+}
+
+.card img:hover{
+    scale: 5;
+    cursor: pointer;
 }
